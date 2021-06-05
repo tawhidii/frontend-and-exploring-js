@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events Example</title>
+</head>
+<body>
+    <h1 onclick=""> Exploring Events </h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis dignissimos molestias quidem libero dolores numquam ut unde pariatur. Ab dolores reiciendis a amet soluta distinctio expedita fugit ea dolore repudiandae!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis dignissimos molestias quidem libero dolores numquam ut unde pariatur. Ab dolores reiciendis a amet soluta distinctio expedita fugit ea dolore repudiandae!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis dignissimos molestias quidem libero dolores numquam ut unde pariatur. Ab dolores reiciendis a amet soluta distinctio expedita fugit ea dolore repudiandae!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis dignissimos molestias quidem libero dolores numquam ut unde pariatur. Ab dolores reiciendis a amet soluta distinctio expedita fugit ea dolore repudiandae!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis dignissimos molestias quidem libero dolores numquam ut unde pariatur. Ab dolores reiciendis a amet soluta distinctio expedita fugit ea dolore repudiandae!</p>
+    <button id="first">Click Me - 1</button>
+    <button id="second">Click Me - 2</button>
+    <button id="third">Click Me - 3</button>
+    <button>Click Me - 4</button>
+    <button id='lastButton'>Click Me - 5</button>
+
+    <script>
+        // click handler
+        // function handleClick(){
+        //     console.log(new Date())
+        // }
+        // function changeBackGround(){
+        //     document.body.style.backgroundColor = '#339FFF'
+
+        // }
+        // var secondBtn = document.getElementById('second');
+        // secondBtn.addEventListener('click',changeBackGround);
+
+        // Event for first button
+        document.getElementById('first')
+                .addEventListener('click',function(){
+                    document.body.style.backgroundColor = 'tomato'
+                });
+        // Event for second button 
+        document.getElementById('second').addEventListener('click',function(){
+            document.body.style.backgroundColor = 'cyan'
+        })
+        // Event for lastbutton
+         document.getElementById('lastButton')
+                .addEventListener('click',function(){
+                    document.body.style.color = 'blue'
+                });
+            
+    </script>
+</body>
+</html>
