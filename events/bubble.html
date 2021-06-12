@@ -24,16 +24,19 @@
         // Event listener for li first 
         document.getElementById('first').addEventListener('click',function(event){
             console.log('First element clicked !! ');
+            event.stopPropagation()
         });
        
 
          // Event listener for ul  myList
          document.getElementById('myList').addEventListener('click',function(event){
             console.log('MyList Clicked!!');
+            event.stopPropagation()
         });
          // Event listener for div container 
          document.getElementById('container').addEventListener('click',function(event){
             console.log('Conatiner clicked !!');
+            event.stopPropagation()
         });
 
     </script>
