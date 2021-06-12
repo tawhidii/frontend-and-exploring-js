@@ -16,28 +16,44 @@
             <li class="item">Quia, temporibus consequatur.</li>
             <li class="item">Cumque, optio consequuntur?</li>
         </ul>
+        <button id='addNew'>Add Item</button>
     </div>
 
     <script>
-         /// EXAMPLE OF EVENT BUBBLING ///
+
+        // var items = document.getElementsByClassName('item')
+        // for (let i = 0; i < items.length; i++) {
+        //     var item = items[i];
+        //     item.addEventListener('click',function(event){
+        //         event.target.parentNode.removeChild(event.target)
+        //     })
+        // }
+
+        document.getElementById('addNew').addEventListener('click',function(event){
+            var parentNode = document.getElementById('myList')
+            var newItem = document.createElement('li')
+            newItem.innerText = 'This is a dummy text!!'
+            parentNode.appendChild(newItem)
+        })
+        //  /// EXAMPLE OF EVENT BUBBLING ///
          
-        // Event listener for li first 
-        document.getElementById('first').addEventListener('click',function(event){
-            console.log('First element clicked !! ');
-            event.stopPropagation()
-        });
+        // // Event listener for li first 
+        // document.getElementById('first').addEventListener('click',function(event){
+        //     console.log('First element clicked !! ');
+        //     event.stopPropagation()
+        // });
        
 
-         // Event listener for ul  myList
+        //  // Event listener for ul  myList
          document.getElementById('myList').addEventListener('click',function(event){
-            console.log('MyList Clicked!!');
+            event.target.parentNode.removeChild(event.target)
             event.stopPropagation()
         });
-         // Event listener for div container 
-         document.getElementById('container').addEventListener('click',function(event){
-            console.log('Conatiner clicked !!');
-            event.stopPropagation()
-        });
+        //  // Event listener for div container 
+        //  document.getElementById('container').addEventListener('click',function(event){
+        //     console.log('Conatiner clicked !!');
+        //     event.stopPropagation()
+        // });
 
     </script>
 </body>
