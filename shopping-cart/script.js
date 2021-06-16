@@ -9,7 +9,6 @@ function plusMinus(plusId,minusId,itemValue,priceProduct) {
     const defaultValue = document.getElementById(itemValue).value
     let numberByOne = parseInt(defaultValue)
     let productPrice = document.getElementById(priceProduct).innerText
-    console.log(productPrice)
     // plus
     plusButton.addEventListener('click',()=>{
         numberByOne++
@@ -17,6 +16,12 @@ function plusMinus(plusId,minusId,itemValue,priceProduct) {
         document.getElementById(itemValue).value = numberByOne
         // increase product price
         document.getElementById(priceProduct).innerText = productPrice * numberByOne
+        let plusPrice = document.getElementById(priceProduct).innerText
+        let plusPriceNum = parseInt(plusPrice)
+        // sub total after plus
+        document.getElementById('subTotal').innerText = productPrice * numberByOne 
+        // total after plus
+        document.getElementById('totalPay').innerText = productPrice * numberByOne
 
     })
 
@@ -26,6 +31,8 @@ function plusMinus(plusId,minusId,itemValue,priceProduct) {
         document.getElementById(itemValue).value = numberByOne
         document.getElementById(priceProduct).innerText = productPrice * numberByOne
     })
+
+    
 }
 
 
