@@ -86,3 +86,9 @@ section{
 .description{
     text-align: center;
 }
+
+
+.img-area img{
+    width: 30%;
+}
+
