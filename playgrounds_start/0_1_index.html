@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>0_1_index</title>
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- nav 1.1.0 -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="0_1_index.html">Bootstrap Playground</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#playgroundsNavbar" aria-controls="playgroundsNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="playgroundsNavbar">
+                <div class="navbar-nav ml-auto">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="0_1_index.html">Home <span class="sr-only">(current)</span></a>
+                        </li>                        
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="utilitiesDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Grid
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="utilitiesDropdown">
+                                <h6 class="dropdown-item disabled aw-line-height" href="#">Grid &amp; Flexbox</h6>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="1_1_containers.html">1. Containers *</a>
+                                <a class="dropdown-item" href="1_2_grid.html">2. Grid *</a>
+                                <a class="dropdown-item" href="1_3_grid_breakpoints.html">3. Grid &amp; Breakpoints *</a>
+                                <a class="dropdown-item" href="1_4_display.html">4. Display *</a>
+                                <a class="dropdown-item" href="1_5_flex.html">5. Flex *</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="utilitiesDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Utilities
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="utilitiesDropdown">
+                                <h6 class="dropdown-item disabled aw-line-height" href="#">Utilities</h6>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="2_1_typography.html">1. Typography *</a>
+                                <a class="dropdown-item" href="2_2_text.html">2. Text *</a>
+                                <a class="dropdown-item" href="2_3_code.html">3. Code</a>
+                                <a class="dropdown-item" href="2_4_colors.html">4. Colors *</a>
+                                <a class="dropdown-item" href="2_5_spacing.html">5. Spacing *</a>
+                                <a class="dropdown-item" href="2_6_sizing.html">6. Sizing *</a>
+                                <a class="dropdown-item" href="2_7_images.html">7. Images *</a>
+                                <a class="dropdown-item" href="2_8_figures.html">8. Figures</a>
+                                <a class="dropdown-item" href="2_9_borders.html">9. Borders *</a>
+                                <a class="dropdown-item" href="2_10_tables.html">10. Tables *</a>
+                                <a class="dropdown-item" href="2_11_vertical_align.html">11. Vertical Align</a>
+                                <a class="dropdown-item" href="2_12_float.html">12. Float</a>
+                                <a class="dropdown-item" href="2_13_clearfix.html">13. Clearfix</a>
+                                <a class="dropdown-item" href="2_14_screenreaders.html">14. Screenreaders</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="utilitiesDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Components
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="utilitiesDropdown">
+                                <h6 class="dropdown-item disabled aw-line-height" href="#">Content &amp; Components</h6>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="3_1_media_object.html">1. Media Object</a>
+                                <a class="dropdown-item" href="3_2_alerts.html">2. Alerts</a>
+                                <a class="dropdown-item" href="3_3_badges.html">3. Badges</a>
+                                <a class="dropdown-item" href="3_4_breadcrumb.html">4. Breadcrumb</a>
+                                <a class="dropdown-item" href="3_5_buttons.html">5. Buttons *</a>
+                                <a class="dropdown-item" href="3_6_button_group.html">6. Button Group</a>
+                                <a class="dropdown-item" href="3_7_dropdowns.html">7. Dropdowns</a>
+                                <a class="dropdown-item" href="3_8_cards.html">8. Cards *</a>
+                                <a class="dropdown-item" href="3_9_forms.html">9. Forms</a>
+                                <a class="dropdown-item" href="3_10_input_group.html">10. Input Groups</a>
+                                <a class="dropdown-item" href="3_11_navs.html">11. Navs *</a>
+                                <a class="dropdown-item" href="3_12_navbar.html">12. Navbars *</a>
+                                <a class="dropdown-item" href="3_13_position.html">13. Position *</a>
+                                <a class="dropdown-item" href="3_14_pagination.html">14. Pagination</a>
+                                <a class="dropdown-item" href="3_15_progress_bar.html">15. Progress Bars</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="utilitiesDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                JavaScript
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="utilitiesDropdown">
+                                <h6 class="dropdown-item disabled aw-line-height" href="#">JavaScript</h6>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="4_1_carousel.html">1. Carousel</a>
+                                <a class="dropdown-item" href="4_2_collapse.html">2. Collapse *</a>
+                                <a class="dropdown-item" href="4_3_tooltips.html">3. Tooltips</a>
+                                <a class="dropdown-item" href="4_4_popovers.html">4. Popovers</a>
+                                <a class="dropdown-item" href="4_5_modals.html">5. Modals</a>
+                                <a class="dropdown-item" href="4_6_scrollspy.html">6. Scrollspy *</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Heading Container -->
+    <div class="container text-center">
+        <h1 class="display-4 mt-4">Getting Started</h1>
+
+        <h4 class="mt-4">Get Bootstrap</h4>
+        <div class="d-block">
+            <a href="https://getbootstrap.com/" target="_blank">Bootstrap Docs</a>
+        </div>
+
+        <h4 class="mt-4">Visual Studio Code</h4>
+        <div class="d-block">
+            <a href="https://code.visualstudio.com/Download" target="_blank">VS Code Software</a>
+        </div>
+
+        <h4 class="mt-4">Visual Studio Code Extensions</h4>
+        <div class="d-block">
+            <a href="https://marketplace.visualstudio.com/items?itemName=ecmel.vscode-html-css" target="_blank">HTML CSS Support</a>
+        </div>
+        <div class="d-block">
+            <a href="https://marketplace.visualstudio.com/items?itemName=Zignd.html-css-class-completion" target="_blank">IntelliSense for CSS class names</a>
+        </div>
+        <div class="d-block">
+            <a href="https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer" target="_blank">Live Server</a>
+        </div>
+        <div class="d-block">
+            <a href="https://marketplace.visualstudio.com/items?itemName=ionutvmi.path-autocomplete" target="_blank">Path Autocomplete</a>
+        </div>
+
+
+        <h1 class="display-4 mt-4">Resources</h1>
+
+        <h4 class="mt-4">Tools</h4>
+        <div>
+            <a href="https://bootstrapcreative.com/resources/bootstrap-4-css-classes-index/" target="_blank" class="text-danger">Bootstrap Cheatsheet</a>
+        </div>
+        <div>
+            <a href="https://offroadcode.com/rem-calculator" target="_blank">REM Calculator</a>
+        </div>
+
+        <h4 class="mt-4">Visual Studio Code (VS Code)</h4>
+        <div>
+            <a href="https://code.visualstudio.com/Download" target="_blank">VS Code Software</a>
+        </div>
+        <h6 class="mt-4">Keyboard Shortcuts (cloud)</h6>
+        <div>
+            <a href="https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf" target="_blank">Mac Keyboard Shortcuts (cloud)</a>
+        </div>
+        <div>
+            <a href="https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf" target="_blank">Windows Keyboard Shortcuts (cloud)</a>
+        </div>
+        <h6 class="mt-4">Keyboard Shortcuts (local)</h6>
+        <div>
+            <a href="resources/docs/keyboard-shortcuts-macos.pdf" target="_blank">Mac Keyboard Shortcuts (local)</a>
+        </div>
+        <div>
+            <a href="resources/docs/keyboard-shortcuts-windows.pdf" target="_blank">Windows Keyboard Shortcuts (local)</a>
+        </div>
+    </div><!-- End Container -->
+
+    <footer class="my-5 py-5">
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

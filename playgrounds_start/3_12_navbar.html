@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>3_12_navbars</title>
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- nav 1.1.0 -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="0_1_index.html">Bootstrap Playground</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#playgroundsNavbar" aria-controls="playgroundsNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="playgroundsNavbar">
+                <div class="navbar-nav ml-auto">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="0_1_index.html">Home</a>
+                        </li>                        
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="utilitiesDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Grid
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="utilitiesDropdown">
+                                <h6 class="dropdown-item disabled aw-line-height" href="#">Grid &amp; Flexbox</h6>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="1_1_containers.html">1. Containers *</a>
+                                <a class="dropdown-item" href="1_2_grid.html">2. Grid *</a>
+                                <a class="dropdown-item" href="1_3_grid_breakpoints.html">3. Grid &amp; Breakpoints *</a>
+                                <a class="dropdown-item" href="1_4_display.html">4. Display *</a>
+                                <a class="dropdown-item" href="1_5_flex.html">5. Flex *</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="utilitiesDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Utilities
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="utilitiesDropdown">
+                                <h6 class="dropdown-item disabled aw-line-height" href="#">Utilities</h6>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="2_1_typography.html">1. Typography *</a>
+                                <a class="dropdown-item" href="2_2_text.html">2. Text *</a>
+                                <a class="dropdown-item" href="2_3_code.html">3. Code</a>
+                                <a class="dropdown-item" href="2_4_colors.html">4. Colors *</a>
+                                <a class="dropdown-item" href="2_5_spacing.html">5. Spacing *</a>
+                                <a class="dropdown-item" href="2_6_sizing.html">6. Sizing *</a>
+                                <a class="dropdown-item" href="2_7_images.html">7. Images *</a>
+                                <a class="dropdown-item" href="2_8_figures.html">8. Figures</a>
+                                <a class="dropdown-item" href="2_9_borders.html">9. Borders *</a>
+                                <a class="dropdown-item" href="2_10_tables.html">10. Tables *</a>
+                                <a class="dropdown-item" href="2_11_vertical_align.html">11. Vertical Align</a>
+                                <a class="dropdown-item" href="2_12_float.html">12. Float</a>
+                                <a class="dropdown-item" href="2_13_clearfix.html">13. Clearfix</a>
+                                <a class="dropdown-item" href="2_14_screenreaders.html">14. Screenreaders</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" href="#" id="utilitiesDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Components
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="utilitiesDropdown">
+                                <h6 class="dropdown-item disabled aw-line-height" href="#">Content &amp; Components</h6>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="3_1_media_object.html">1. Media Object</a>
+                                <a class="dropdown-item" href="3_2_alerts.html">2. Alerts</a>
+                                <a class="dropdown-item" href="3_3_badges.html">3. Badges</a>
+                                <a class="dropdown-item" href="3_4_breadcrumb.html">4. Breadcrumb</a>
+                                <a class="dropdown-item" href="3_5_buttons.html">5. Buttons *</a>
+                                <a class="dropdown-item" href="3_6_button_group.html">6. Button Group</a>
+                                <a class="dropdown-item" href="3_7_dropdowns.html">7. Dropdowns</a>
+                                <a class="dropdown-item" href="3_8_cards.html">8. Cards *</a>
+                                <a class="dropdown-item" href="3_9_forms.html">9. Forms</a>
+                                <a class="dropdown-item" href="3_10_input_group.html">10. Input Groups</a>
+                                <a class="dropdown-item" href="3_11_navs.html">11. Navs *</a>
+                                <a class="dropdown-item active" href="3_12_navbar.html">12. Navbars * <span class="sr-only">(current)</span></a>
+                                <a class="dropdown-item" href="3_13_position.html">13. Position *</a>
+                                <a class="dropdown-item" href="3_14_pagination.html">14. Pagination</a>
+                                <a class="dropdown-item" href="3_15_progress_bar.html">15. Progress Bars</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="utilitiesDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                JavaScript
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="utilitiesDropdown">
+                                <h6 class="dropdown-item disabled aw-line-height" href="#">JavaScript</h6>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="4_1_carousel.html">1. Carousel</a>
+                                <a class="dropdown-item" href="4_2_collapse.html">2. Collapse *</a>
+                                <a class="dropdown-item" href="4_3_tooltips.html">3. Tooltips</a>
+                                <a class="dropdown-item" href="4_4_popovers.html">4. Popovers</a>
+                                <a class="dropdown-item" href="4_5_modals.html">5. Modals</a>
+                                <a class="dropdown-item" href="4_6_scrollspy.html">6. Scrollspy *</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Heading Container -->
+    <div id="heading-container" class="container">
+        <div class="text-center mb-4">
+            <h1 class="display-4 mt-4">Navbars 
+                <a href="https://getbootstrap.com/docs/4.0/components/navbar/" target="_blank" class="text-dark">
+                    <span class="h1" title="See offical documentation">
+                        <i class="fa fa-question-circle" aria-hidden="true"></i>
+                    </span>
+                </a>
+            </h1>
+            <div class="container">
+                <div class="d-sm-none">
+                    <h1>XS</h1>
+                    <h5>Portrait Phones</h5>
+                    <h6>&#60;576px</h6>
+                </div>                
+                <div class="d-none d-sm-block d-md-none">
+                    <h1>SM</h1>
+                    <h5>Landscape Phones</h5>
+                    <h6>&ge;576px to &#60;768px</h6>
+                </div>
+                <div class="d-none d-md-block d-lg-none">
+                    <h1>MD</h1>
+                    <h5>Tablets</h5>
+                    <h6>&ge;768px to &#60;992px</h6>
+                </div>
+                <div class="d-none d-lg-block d-xl-none">
+                    <h1>LG</h1>
+                    <h5>Laptops</h5>
+                    <h6>&ge;992px to &#60;1200px</h6>
+                </div>
+                <div class="d-none d-xl-block">
+                    <h1>XL</h1>
+                    <h5>Desktops</h5>
+                    <h6>&ge;1200px</h6>
+                </div>
+            </div>
+        </div>
+    </div><!-- End Heading Container -->
+    
+    
+    <!-- ############ START HERE ############ -->
+    <div id="main-container" class="container">
+        
+        <!-- ***** Navbar ***** -->
+        <div class="mt-4 mb-2 bg-dark text-light p-3 rounded">
+            <h2>Navbar</h2>
+            <code class="d-inline-block mb-1 aw-code">.navbar</code> &amp; 
+            <code class="d-inline-block mb-1 aw-code">.navbar-expand-{breakpoint}</code> = 
+            <code class="d-inline-block mb-1 aw-code">.navbar-expand-{sm, md, lg, xl}</code>
+        </div>
+        <!-- # Code Examples # -->
+
+        <!-- example 1 - Navbar -->
+        <nav class="mb-2">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Disabled</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+
+        <!-- example 2 - Navbar -->
+        <nav class="">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarBasic" aria-controls="navbarBasic" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>          
+            <div class="collapse navbar-collapse" id="navbarBasic">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Disabled</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+
+        <!-- ***** Navbar Brand ***** -->
+        <div class="mt-4 mb-2 bg-dark text-light p-3 rounded">
+            <h2>Navbar Brand</h2>
+            <code class="d-inline-block mb-1 aw-code">.navbar-brand</code>
+        </div>
+        <!-- # Code Examples # -->
+
+        <!-- example 1 - Navbar Brand -->
+        <nav class="navbar navbar-light bg-light mb-2">
+            <a class="" href="#">Navbar</a>
+        </nav>
+      
+        <!-- example 2 - Navbar Brand -->
+        <nav class="navbar navbar-light bg-light mb-2">
+            <span class="">Navbar</span>
+        </nav>
+
+        <!-- example 3 - Navbar Brand -->
+        <nav class="navbar navbar-light bg-light mb-2">
+            <a class="" href="#">
+                <img src="img/bootstrap-solid.svg" width="30" height="30" alt="">
+            </a>
+        </nav>
+
+        <!-- example 4 - Navbar Brand -->
+        <nav class="navbar navbar-light bg-light">
+            <a class="" href="#">
+            <img src="img/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+                Bootstrap
+            </a>
+        </nav>
+
+
+        <!-- ***** Navbar Active ***** -->
+        <div class="mt-4 mb-2 bg-dark text-light p-3 rounded">
+            <h2>Navbar Active</h2>
+            <code class="d-inline-block mb-1 aw-code">.active</code> or 
+            <code class="d-inline-block mb-1 aw-code">.disabled</code> &amp; 
+            <code class="d-inline-block mb-1 aw-code">.nav-link</code> 
+            <code class="d-inline-block mb-1 aw-code">.nav-item</code>
+        </div>
+        <!-- # Code Examples # -->
+
+        <!-- example 1 - Navbar Active -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light mb-2">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#">Disabled</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- example 2 - Navbar Brand -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light mb-2">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link" href="#">Features</a>
+                    <a class="nav-item nav-link" href="#">Pricing</a>
+                    <a class="nav-item nav-link" href="#">Disabled</a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- example 3 - Navbar Brand -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light mb-2">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Dropdown link
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+
+        <!-- ***** Forms ***** -->
+        <div class="mt-4 mb-2 bg-dark text-light p-3 rounded">
+            <h2>Forms</h2>
+            <code class="d-inline-block mb-1 aw-code">&lt;form&gt;</code> &amp; 
+            <code class="d-inline-block mb-1 aw-code">.form-inline</code>
+        </div>
+        <!-- # Code Examples # -->
+
+        <!-- example 1 - Forms -->
+        <nav class="navbar navbar-light bg-light mb-2">
+            <form class="">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </nav>
+
+        <!-- example 2 - Forms -->
+        <nav class="navbar navbar-light bg-light justify-content-between mb-2">
+            <a class="navbar-brand">Navbar</a>
+            <form class="">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </nav>
+
+        <!-- example 3 - Forms -->
+        <nav class="navbar navbar-light bg-light mb-2">
+            <form class="">
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon1">@</span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                </div>
+            </form>
+        </nav>
+        
+        <!-- example 4 - Forms -->
+        <nav class="navbar navbar-light bg-light mb-2">
+            <form class="">
+                <button class="btn btn-outline-success" type="button">Main button</button>
+                <button class="btn btn-sm align-middle btn-outline-secondary" type="button">Smaller button</button>
+            </form>
+        </nav>
+
+
+        <!-- ***** Text ***** -->
+        <div class="mt-4 mb-2 bg-dark text-light p-3 rounded">
+            <h2>Text</h2>
+            <code class="d-inline-block mb-1 aw-code">.navbar-text</code>
+        </div>
+        <!-- # Code Examples # -->
+
+        <!-- example 1 - Text -->
+        <nav class="navbar navbar-light bg-light mb-2">
+            <span class="">
+                Navbar text with an inline element
+            </span>
+        </nav>
+
+        <!-- example 2 - Text -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light mb-2">
+            <a class="navbar-brand" href="#">Navbar w/ text</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                </ul>
+                <span class="">
+                    Navbar text with an inline element
+                </span>
+            </div>
+        </nav>
+
+        
+        <!-- ***** Color Schemes ***** -->
+        <div class="mt-4 mb-2 bg-dark text-light p-3 rounded">
+            <h2>Color Schemes</h2>
+            <code class="d-inline-block mb-1 aw-code">.bg-{color}</code> &amp; 
+            <code class="d-inline-block mb-1 aw-code">.navbar-dark</code> or 
+            <code class="d-inline-block mb-1 aw-code">.navbar-light</code>
+        </div>
+        <!-- # Code Examples # -->
+
+        <!-- example 1 - Color Schemes -->
+        <nav class="navbar mb-2">
+            <a href="#" class="navbar-brand">Navbar</a>
+        </nav>
+        
+        <!-- example 2 - Color Schemes -->
+        <nav class="navbar mb-2">
+            <a href="#" class="navbar-brand">Navbar</a>
+        </nav>
+
+        <!-- example 3 - Color Schemes -->
+        <nav class="navbar mb-2">
+            <a href="#" class="navbar-brand">Navbar</a>
+        </nav>
+
+        <!-- example 4 - Color Schemes -->
+        <nav class="navbar mb-2">
+            <a href="#" class="navbar-brand">Navbar</a>
+        </nav>
+
+        <!-- example 5 - Color Schemes -->
+        <nav class="navbar mb-2">
+            <a href="#" class="navbar-brand">Navbar</a>
+        </nav>
+
+        <!-- example 6 - Color Schemes -->
+        <nav class="navbar mb-2">
+            <a href="#" class="navbar-brand">Navbar</a>
+        </nav>
+
+        <!-- example 7 - Color Schemes -->
+        <nav class="navbar mb-2">
+            <a href="#" class="navbar-brand">Navbar</a>
+        </nav>
+        
+        <!-- example 8 - Color Schemes -->        
+        <nav class="navbar mb-2" style="background-color: #e3f2fd;">
+            <a href="#" class="navbar-brand">Navbar</a>
+        </nav>
+
+        
+        <!-- ***** Containers ***** -->
+        <div class="mt-4 mb-2 bg-dark text-light p-3 rounded">
+            <h2>Containers</h2>
+            <code class="d-inline-block mb-1 aw-code">.container</code>
+        </div>
+    </div><!-- End Main Container - needed for next examples -->
+        <!-- # Code Examples # -->
+
+        <!-- example 1 - Containers -->
+        <div class="">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-2">
+                <a class="navbar-brand" href="#">Navbar</a>
+            </nav>
+        </div>
+
+        <!-- example 2 - Containers -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-2">
+            <div class="">
+                <a class="navbar-brand" href="#">Navbar</a>
+            </div>
+        </nav>
+
+        <!-- example 3 - Containers -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-2">
+            <a class="navbar-brand" href="#">Navbar</a>
+        </nav>
+
+    <!-- Starting Main Container again - example over -->
+    <div id="main-container-continued" class="container">
+        
+
+        <!-- ***** Navbar Toggler ***** -->
+        <div class="mt-4 mb-2 bg-dark text-light p-3 rounded">
+            <h2>Navbar Toggler</h2>
+            <code class="d-inline-block mb-1 aw-code">.navbar-toggler</code> &amp; 
+            <code class="d-inline-block mb-1 aw-code">.navbar-toggler-icon</code> 
+        </div>
+        <!-- # Code Examples # -->
+
+        <!-- example 1 - Navbar Toggler Classes -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light mb-2">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <!-- <button class="" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class=""></span>
+            </button> -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Disabled</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- example 2 - Navbar Toggler Classes -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light mb-2">
+            <!-- <button class="" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class=""></span>
+            </button> -->
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <a href="#" class="navbar-brand">Hidden brand</a>
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a href="#" class="nav-link">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link disabled">Disabled</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input type="search" class="form-control mr-sm-2" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+
+        <!-- example 3 - Navbar Toggler Classes -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light mb-2">
+            <a href="#" class="navbar-brand">Brand</a>
+            <!-- <button class="" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class=""></span>
+            </button> -->
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">                    
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a href="#" class="nav-link">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link disabled">Disabled</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input type="search" class="form-control mr-sm-2" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+
+        <!-- ***** Toggle External Content ***** -->
+        <div class="mt-4 mb-2 bg-dark text-light p-3 rounded">
+            <h2>Toggle External Content</h2>
+            <code class="d-inline-block mb-1 aw-code">id</code> &amp; 
+            <code class="d-inline-block mb-1 aw-code">data-target</code>
+        </div>
+        <!-- # Code Examples # -->
+
+        <!-- example 1 - Toggle External Content -->
+        <div>
+            <div class="collapse" id="">
+                <div class="bg-dark p-4">
+                    <h4 class="text-white">Collapsed content</h4>
+                    <span class="text-muted">Toggleable via the navbar brand.</span>
+                </div>
+            </div>
+            <nav class="navbar navbar-dark bg-dark">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </nav>
+        </div>
+
+
+    </div><!-- End Main Container Continued -->    
+
+    <footer class="my-5 py-5">
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
