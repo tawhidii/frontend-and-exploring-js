@@ -17,9 +17,15 @@
             border-radius: 10px;
             position: relative;
             margin: 10px;
+            overflow: hidden;
         }
         .photo-frame .photo img{
             width: 100%;
+        }
+        .photo-frame:hover .photo img{
+            transform: rotate(360deg);
+            transition: transform 2s;
+
         }
         .photo-detail{
             display: none;
@@ -31,7 +37,7 @@
         }
         .photo-frame:hover .photo-detail{
             display: block;
-            background-color: rgb(7, 161, 161,0.1)
+            background-color: rgb(7, 161, 161,0.5)
         }
         .photo-frame:hover .photo-detail h3{
             color: white;
