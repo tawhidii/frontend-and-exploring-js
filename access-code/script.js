@@ -21,7 +21,18 @@ function verifyPin() {
     if(parseInt(userInput) === parseInt(generatedPin)){
         document.getElementById('success').style.display = "block"
         document.getElementById('userPin').value = ""
+
+    }else{
+        document.getElementById('wrong').style.display = "block"
+        document.getElementById('userPin').value = ""
+        const attempt = document.getElementById('attempt').innerText 
+        if(parseInt(attempt)>0){
+            document.getElementById('attempt').innerText = parseInt(attempt) - 1
+        }
+       
     }
+
+
     
 }
 
