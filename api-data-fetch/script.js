@@ -10,5 +10,15 @@ $.ajax({
     error: function(error) {
         console.log(error)
     }
-    
 })
+
+// XMLHttp Request 
+const req = new XMLHttpRequest()
+
+req.addEventListener('readystatechange',function() {
+    if(req.readyState == 4){
+        console.log('result from xhttp',JSON.parse(req.responseText))
+    }
+})
+req.open('GET',baseUrl)
+req.send()
