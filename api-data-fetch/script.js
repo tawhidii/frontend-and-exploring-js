@@ -22,3 +22,10 @@ req.addEventListener('readystatechange',function() {
 })
 req.open('GET',baseUrl)
 req.send()
+
+// fetch 
+fetch(baseUrl)
+.then(response => response.json()).then(data=>console.log(data))
+.catch(error=>console.log(error))
+
+
