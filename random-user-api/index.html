@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramdom User</title>
+</head>
+<body>
+    <h2>Name : <span id='name'></span></h2>
+    <div id="user-image">
+
+    </div>
+
+    <script>
+        function getuserData(){
+            const name = document.getElementById('name')
+            const image = document.getElementById('user-image')
+            fetch('https://randomuser.me/api/')
+            .then(response=>response.json())
+            .then(data=> data.results.map(d=>{
+                name.innerText = `${d.name.title} ${d.name.first} ${d.name.last}`
+                const insertImage = document.createElement('img')
+                insertImage.src = d.picture.large
+                image.appendChild(insertImage)
+
+            }))
+        }
+        getuserData()
+    </script>
+</body>
+</html>
