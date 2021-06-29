@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bored API</title>
+</head>
+<body>
+    <h1>Activity for me : <span id="activity"></span></h1>
+    
+    <h2>Follow this link :<a id="link" href=""></a> </h2>
+
+    <script>
+        function suggestActivity(){
+            fetch('https://www.boredapi.com/api/activity')
+            .then(response=>response.json())
+            .then(data=>{
+                console.log(data.link)
+                document.getElementById('activity').innerText = data.activity
+                document.getElementById('link').innerText =data.link
+            })
+        }
+
+        setInterval(() => {
+            suggestActivity()
+        }, 5000);
+    </script>
+</body>
+</html>
