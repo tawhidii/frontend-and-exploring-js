@@ -5,12 +5,21 @@ const userData = {
         console.log(this.userName)
       
     },
-    showBalance:function(amount){
+    payBill:function(amount){
         const currentBalance = this.salary - amount
-        return currentBalance
+        console.log('Current Balance is:',currentBalance)
     }   
     
 }
+// Implementing bind 
+const anotherUserData = {
+    userName:'Mr hello world !!',
+    salary:3000
+}
 
-userData.showDetails()
-console.log(userData.showBalance(1000))
+const anotherBillPay = userData.payBill.bind(anotherUserData)
+
+
+
+// userData.showDetails()
+// console.log(userData.payBill(1000))
