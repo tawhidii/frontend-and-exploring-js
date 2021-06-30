@@ -5,8 +5,8 @@ const userData = {
         console.log(this.userName)
       
     },
-    payBill:function(amount){
-        const currentBalance = this.salary - amount
+    payBill:function(amount,tax,tips){
+        const currentBalance = this.salary - amount - tax -tips
         console.log('Current Balance is:',currentBalance)
     }   
     
@@ -16,8 +16,16 @@ const anotherUserData = {
     userName:'Mr hello world !!',
     salary:3000
 }
+// will return a fucntion where have to pass value to perform the calculaton
+// const anotherBillPay = userData.payBill.bind(anotherUserData)
 
-const anotherBillPay = userData.payBill.bind(anotherUserData)
+
+// implementation of call
+userData.payBill.call(anotherUserData,500,60,700)
+
+// application of apply
+userData.payBill.apply(anotherUserData,[500,60,700]) // have to pass value as array
+
 
 
 
