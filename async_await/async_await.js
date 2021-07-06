@@ -1,19 +1,32 @@
-function loadStarWars(){
-    fetch('https://jsonplaceholder.typicode.com/users')
-        .then(response=>response.json())
-        .then(data=>{
-            displayData(data)
-        })
-}
+// function loadStarWars(){
+//     fetch('https://jsonplaceholder.typicode.com/users')
+//         .then(response=>response.json())
+//         .then(data=>{
+//             displayData(data)
+//         })
+// }
 
-loadStarWars()
+// loadStarWars()
+
+async function loadData(){
+    const response = await fetch('https://swapi.dev/api/people/?page=2')
+    const data = await response.json()
+    
+    displayData(data)
+}
+loadData()
 function displayData(data){
-    console.log(data)
     const parentNode = document.getElementById('swarsList')
-    for (let i = 0; i < data.length; i++) {
-        const warsList = document.createElement('li')
-        warsList.innerText = data[i].name
-        parentNode.appendChild(warsList)
-    }
+    data.results.map(value=>{
+        const nameList = document.createElement('li')
+        nameList.innerText = value.name
+        parentNode.appendChild(nameList)
+    })
 }
 
+// const  greetings = async (name) => {
+//     return `Hello ${name}`
+// }
+
+// const gret = greetings('bari')
+// gret.then(response=>console.log(response))
