@@ -12,7 +12,7 @@ searchBtn.addEventListener('click',()=>{
 
 
 function getApiData(cityName){
-    const api_key = '6bea8f93fb55a484b90c743d01f47f9d'
+    const api_key = 'api-key-from-open-weather'
     fetch(`http://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${api_key}`)
     .then(response=>response.json())
     .then(data=>{
