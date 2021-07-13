@@ -18,3 +18,13 @@
   grid-gap: 10px;
 
 }
+
+#country-details{
+  border: 2px solid tomato;
+  border-radius: 20px;
+  text-align: center;
+  padding: 50px;
+}
+#country-details img{
+  height: 300px;
+}
