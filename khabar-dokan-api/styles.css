@@ -33,3 +33,18 @@ font-size: 20px;
     grid-gap: 10px;
     text-align: center;
 }
+
+.meal-details{
+    border: 2px solid greenyellow;
+    padding: 100px;
+    border-radius: 10px;
+    text-align: center;
+    width: 50%;
+    display: gr;
+
+
+}
+
+.meal-details img{
+    height: 250px;
+}

@@ -14,7 +14,6 @@ const displayMealData =  data =>{
     const mealCard = document.getElementById('meal-card')
     mealCard.innerHTML = ""
     data.meals.map(meal=>{
-        console.log(meal)
         mealCard.innerHTML += `
         <div class="meal-item" onclick="mealDetails('${meal.idMeal}')">
             <img src="${meal.strMealThumb}">
@@ -27,5 +26,21 @@ const displayMealData =  data =>{
 
 const mealDetails = (mealId) => {
     fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${mealId}`)
-
+    .then(response=>response.json())
+    .then(data=>{
+        const search = document.getElementById('search')
+        search.style.display = "none"
+        const mealCard = document.getElementById('meal-card')
+        data.meals.map(mealDetail=>{
+            console.log(mealDetail)
+            mealCard.innerHTML = `
+            <div class="meal-details">
+                <h1>${mealDetail.strMeal}</h1>
+                <img src="${mealDetail.strMealThumb}">
+                <p>Instruction: ${mealDetail.strInstructions}</p>
+            </div>
+            `
+        })
+        
+    })
 }
