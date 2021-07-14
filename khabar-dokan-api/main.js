@@ -4,7 +4,10 @@ const getMealData = () =>{
     fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${searchBy}`)
         .then(res=>res.json())
         .then(data=>displayMealData(data))
-        .catch(err=>console.log(err))
+        .catch(err=>{
+            const mealCard = document.getElementById('meal-card')
+            mealCard.innerHTML = "<h1>No meal Item Found !! </h1>"
+        })
 }
 
 const displayMealData =  data =>{
@@ -12,13 +15,17 @@ const displayMealData =  data =>{
     mealCard.innerHTML = ""
     data.meals.map(meal=>{
         console.log(meal)
-        const mealItem = document.createElement('div')
-      
-        mealItem.className = 'meal-item'
-        mealItem.innerHTML = `
-        <img src="${meal.strMealThumb}">
-        <h2>${meal.strMeal}</h2>
-        `    
-        mealCard.appendChild(mealItem)
+        mealCard.innerHTML += `
+        <div class="meal-item" onclick="mealDetails('${meal.idMeal}')">
+            <img src="${meal.strMealThumb}">
+            <h2>${meal.strMeal}</h2>
+        <div>
+            `
+
     })
+}
+
+const mealDetails = (mealId) => {
+    fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${mealId}`)
+
 }
