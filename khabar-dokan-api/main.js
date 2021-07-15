@@ -1,14 +1,27 @@
-const getMealData = () =>{
+// const getMealData = () =>{
+//     const searchBy = document.getElementById('meal-input').value
+//     console.log(searchBy)
+//     fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${searchBy}`)
+//         .then(res=>res.json())
+//         .then(data=>displayMealData(data))
+//         .catch(err=>{
+//             const mealCard = document.getElementById('meal-card')
+//             mealCard.innerHTML = "<h1>No meal Item Found !! </h1>"
+//         })
+// }
+
+
+const getMealData = async() =>{
     const searchBy = document.getElementById('meal-input').value
     console.log(searchBy)
-    fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${searchBy}`)
-        .then(res=>res.json())
-        .then(data=>displayMealData(data))
-        .catch(err=>{
-            const mealCard = document.getElementById('meal-card')
-            mealCard.innerHTML = "<h1>No meal Item Found !! </h1>"
-        })
+    const res = await fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${searchBy}`)
+    const data = await res.json()
+    displayMealData(data)
+    const mealCard = document.getElementById('meal-card')
+    
+  
 }
+
 
 const displayMealData =  data =>{
     const mealCard = document.getElementById('meal-card')
