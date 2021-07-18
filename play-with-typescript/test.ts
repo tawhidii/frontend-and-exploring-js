@@ -10,26 +10,28 @@
 
 
 // Interface 
+// interface Player {
+//     name:string,
+//     age:number,
+//     gender?:string, // value not mandatory
+//     salary:number
+// }
 
-interface Player {
-    name:string,
-    age:number,
-    gender?:string, // value not mandatory
-    salary:number
-}
-
-let messi: Player = {
-    name:'messi',
-    age:34,
-    salary:300000000,
+// let messi: Player = {
+//     name:'messi',
+//     age:34,
+//     salary:300000000,
 
 
-}
+// }
 
-let ronaldo: Player = {
-    name:'Ronaldo',
-    age:34,
-    salary:300000000,
-}
+// let ronaldo: Player = {
+//     name:'Ronaldo',
+//     age:34,
+//     salary:300000000,
+// }
 
-console.log(ronaldo.salary)
+// console.log(ronaldo.salary)
+
+
+
