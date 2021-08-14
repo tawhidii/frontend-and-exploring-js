@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body{
+    height: 100%;
+}
+
+.container{
+    background-color: coral;
+    width: 80%;
+    height: 80%;
+    margin: auto;
+}
+.box1,
+.box2,
+.box3{
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: darkgreen;
+}
+
+.box1{
+    position: absolute;
+    top:15rem;
+    left: 23rem;
+    transform: translate(-50%,-50%);
+    background-color:red;
+
+
+}
+.box2{
+    background-color: hotpink;
+}
