@@ -1,0 +1,74 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+
+nav ul{
+    display: flex;
+    min-height: 10vh;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    background-color: cadetblue;
+}
+
+.hero{
+    min-height: 90vh;
+    background-image: url('/flexbox-template/wmf4pf98d4l61.png');
+    background-size: cover;
+    background-position: center;
+    color: wheat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.hero h2{
+    text-align: center;
+    margin: 2rem;
+}
+.hero button{
+    padding: 1rem 2rem;
+    background: coral;
+    border: none;
+
+}
+.intro {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.intro img{
+    width: 100%;  
+}
+.intro-img{
+    flex: 1 1 30rem;
+
+}
+.intro-text{
+    flex: 1 1 30rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+
+}
+
+.intro-text h2{
+    padding: 2rem;
+
+}
+.intro-text p{
+    padding: 0.5rem;
+}
