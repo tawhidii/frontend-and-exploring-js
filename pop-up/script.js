@@ -23,3 +23,9 @@ overlay.addEventListener('click',closeModal)
 
 buttonCloseModal.addEventListener('click',closeModal)
 
+document.addEventListener('keydown',(e)=>{
+    if(e.keyCode===27 && !modal.classList.contains('hidden')){
+        closeModal()
+    }
+
+})
