@@ -7,8 +7,9 @@ const diceElement = document.querySelector('.dice')
 const btnRoll = document.querySelector('.btn--roll')
 const playerOne = document.querySelector('.player--0')
 const playerTwo = document.querySelector('.player--1')
-
-
+// current score 
+let currentScore = 0
+let  activePlayer = 0
 
 
 
@@ -44,15 +45,22 @@ const dispalyDice = (number) => {
 }
 
 
+
 // Roll dice 
 btnRoll.addEventListener('click',()=>{
     const generateNumber = Math.trunc(Math.random() * 6) + 1
-    if(generateNumber===1){
-
-    }
     dispalyDice(generateNumber)
+    if(generateNumber !==1){
+        currentScore += generateNumber
+        document.getElementById(`current--${activePlayer}`).textContent = currentScore
+    }else{
+        document.getElementById(`current--${activePlayer}`).textContent = 0
+        activePlayer = activePlayer=== 0 ? 1 : 0
+        currentScore = 0
+        playerOne.classList.toggle('player--active')
+        playerTwo.classList.toggle('player--active')
+    }
 
-  
 })
 
 
