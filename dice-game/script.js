@@ -60,7 +60,6 @@ btnRoll.addEventListener('click',()=>{
         playerOne.classList.toggle('player--active')
         playerTwo.classList.toggle('player--active')
     }
-
 })
 
 
