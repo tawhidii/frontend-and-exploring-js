@@ -31,8 +31,6 @@ const restaurant = {
       },
     },
 }; 
-
-
 const keys = Object.keys(restaurant.openingHours) // getting keys from object
 console.log(keys)
 
